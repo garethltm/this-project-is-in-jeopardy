@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <html lang = "en">
+        <head>
+            <title>UMSA Jeopardy Game</title>
+            <meta charset = "UTF-8">
+            <link rel="stylesheet" type="text/css" href="styles.css">
+        </head>
+        <body>
+            <div class="container">
+                <h1>Jeopardy Game</h1>
+                <!-- Add your HTML content here -->
+                <table>
+                    <tr>
+                        <th>Category 1</th>
+                        <th>Category 2</th>
+                        <th>Category 3</th>
+                        <th>Category 4</th>
+                        <th>Category 5</th>
+                    </tr>
+                    <tr>
+                        <td class="question" data-value="100">100</td>
+                        <td class="question" data-value="100">100</td>
+                        <td class="question" data-value="100">100</td>
+                        <td class="question" data-value="100">100</td>
+                        <td class="question" data-value="100">100</td>
+                    </tr>
+                    <tr>
+                        <td class="question" data-value="200">200</td>
+                        <td class="question" data-value="200">200</td>
+                        <td class="question" data-value="200">200</td>
+                        <td class="question" data-value="200">200</td>
+                        <td class="question" data-value="200">200</td>
+                    </tr>
+                    <tr>
+                        <td class="question" data-value="300">300</td>
+                        <td class="question" data-value="300">300</td>
+                        <td class="question" data-value="300">300</td>
+                        <td class="question" data-value="300">300</td>
+                        <td class="question" data-value="300">300</td>
+                    </tr>
+                    <tr>
+                        <td class="question" data-value="400">400</td>
+                        <td class="question" data-value="400">400</td>
+                        <td class="question" data-value="400">400</td>
+                        <td class="question" data-value="400">400</td>
+                        <td class="question" data-value="400">400</td>
+                    </tr>
+                    <tr>
+                        <td class="question" data-value="500">500</td>
+                        <td class="question" data-value="500">500</td>
+                        <td class="question" data-value="500">500</td>
+                        <td class="question" data-value="500">500</td>
+                        <td class="question" data-value="500">500</td>
+                    </tr>
+                </table>
+
+                <!-- Add your JavaScript code here -->
+                <script type='text/javascript'>
+                    var questions = document.querySelectorAll('.question');
+                    for (var i = 0; i < questions.length; i++) {
+                        questions[i].addEventListener('click', function() {
+                            var value = this.getAttribute('data-value');
+                            alert('You clicked on a question worth ' + value + ' points!');
+                        });
+                    }
+                </script>
+
+            </div>
+
+        </body>
+
+    </html>
+
